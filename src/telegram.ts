@@ -19,9 +19,11 @@ export class TelegramService {
 
   apiKey = TG_BOT_APIKEY as string
 
-  private template = readFileSync(
-    this.getFilePath("templates/purchase.md")
-  ).toString()
+  private videoPath = this.getFilePath('videos/purchase.mp4')
+
+  private templatePath = this.getFilePath("templates/purchase.md")
+
+  private template = readFileSync(this.templatePath).toString()
 
   private bot = new TelegramBot(this.apiKey)
 
@@ -35,12 +37,10 @@ export class TelegramService {
 
   private async _purchase (payload: Purchase) {
     const { wallet, amount } = payload
-    const stream = createReadStream(
-      this.getFilePath('videos/purchase.mp4')
-    )
-    const amountFixed = Number(amount).toFixed(2)
+    const stream = createReadStream(this.videoPath)
     const caption = this.template
-      .replace('{amount}', amountFixed)
+      .replace('{amount_2}', Number(amount).toFixed(2))
+      .replace('{amount_6}', Number(amount).toFixed(6))
       .replace('{wallet}', wallet)
       .replace('{wallet_short}', this.toShort(wallet))
     return this.bot.sendAnimation(this.channel, stream, {
