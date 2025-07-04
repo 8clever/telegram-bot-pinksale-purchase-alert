@@ -1,3 +1,4 @@
 services:
   app:
+    build: .
     image: ghcr.io/8clever/telegram-bot-pinksale-purchase-alert:latest
