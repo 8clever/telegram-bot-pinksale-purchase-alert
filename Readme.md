@@ -1,5 +1,8 @@
 # Telegram Bot Pinksale Purchase Alert
 
+Supported Pinksale Pools:
+- Fair Launch
+
 Send purchase alerts to telegram channel
 
 For customization purchase message modify:
