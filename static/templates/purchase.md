@@ -1,4 +1,4 @@
-### 💸 Purchase Confirmation
+💸 Purchase Confirmation
 
 - **Amount:** {amount_6} BNB  
 - **Wallet:** `{wallet_short}`

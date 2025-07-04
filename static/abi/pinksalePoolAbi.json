@@ -1,0 +1,525 @@
+[
+ {
+  "type": "function",
+  "selector": "0xe62ced34"
+ },
+ {
+  "type": "function",
+  "selector": "0xea8a1af0",
+  "sig": "cancel()",
+  "name": "cancel",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "type": "function",
+  "selector": "0xf2fde38b",
+  "sig": "transferOwnership(address)",
+  "name": "transferOwnership",
+  "stateMutability": "nonpayable",
+  "inputs": [
+   {
+    "type": "address"
+   }
+  ]
+ },
+ {
+  "type": "function",
+  "selector": "0xf887ea40",
+  "sig": "router()",
+  "name": "router",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "type": "function",
+  "selector": "0xf9f8bdb7",
+  "sig": "currentRate()",
+  "name": "currentRate",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "type": "function",
+  "selector": "0xfdf467e3",
+  "sig": "withdrawCancelledTokens()",
+  "name": "withdrawCancelledTokens",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "type": "function",
+  "selector": "0xccb98ffc",
+  "sig": "setEndTime(uint256)",
+  "name": "setEndTime",
+  "stateMutability": "nonpayable",
+  "inputs": [
+   {
+    "type": "uint256"
+   }
+  ]
+ },
+ {
+  "type": "function",
+  "selector": "0xd7805ece",
+  "sig": "contributionOf(address)",
+  "name": "contributionOf",
+  "stateMutability": "nonpayable",
+  "inputs": [
+   {
+    "type": "address"
+   }
+  ]
+ },
+ {
+  "type": "function",
+  "selector": "0xdb92feca",
+  "sig": "poolSettings()",
+  "name": "poolSettings",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "type": "function",
+  "selector": "0xdcdb2d72"
+ },
+ {
+  "type": "function",
+  "selector": "0xe43581b8",
+  "sig": "isGovernor(address)",
+  "name": "isGovernor",
+  "stateMutability": "nonpayable",
+  "inputs": [
+   {
+    "type": "address"
+   }
+  ]
+ },
+ {
+  "type": "function",
+  "selector": "0xa0355eca",
+  "sig": "setTime(uint256,uint256)",
+  "name": "setTime",
+  "stateMutability": "nonpayable",
+  "inputs": [
+   {
+    "type": "uint256"
+   },
+   {
+    "type": "uint256"
+   }
+  ]
+ },
+ {
+  "type": "function",
+  "selector": "0xaaa7f784",
+  "sig": "getContributors(uint256,uint256)",
+  "name": "getContributors",
+  "stateMutability": "nonpayable",
+  "inputs": [
+   {
+    "type": "uint256"
+   },
+   {
+    "type": "uint256"
+   }
+  ]
+ },
+ {
+  "type": "function",
+  "selector": "0xbaa3f7ee",
+  "sig": "claimedOf(address)",
+  "name": "claimedOf",
+  "stateMutability": "nonpayable",
+  "inputs": [
+   {
+    "type": "address"
+   }
+  ]
+ },
+ {
+  "type": "function",
+  "selector": "0xbf8fc93e",
+  "sig": "distributePurchasedTokens(uint256,uint256)",
+  "name": "distributePurchasedTokens",
+  "stateMutability": "nonpayable",
+  "inputs": [
+   {
+    "type": "uint256"
+   },
+   {
+    "type": "uint256"
+   }
+  ]
+ },
+ {
+  "type": "function",
+  "selector": "0xc45a0155",
+  "sig": "factory()",
+  "name": "factory",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "type": "function",
+  "selector": "0xc58ce87f",
+  "sig": "poolStates()",
+  "name": "poolStates",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "type": "function",
+  "selector": "0x88860bbe",
+  "sig": "distributionCompleted(uint8)",
+  "name": "distributionCompleted",
+  "stateMutability": "nonpayable",
+  "inputs": [
+   {
+    "type": "uint8"
+   }
+  ]
+ },
+ {
+  "type": "function",
+  "selector": "0x893d20e8",
+  "sig": "getOwner()",
+  "name": "getOwner",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "type": "function",
+  "selector": "0x8da5cb5b",
+  "sig": "owner()",
+  "name": "owner",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "type": "function",
+  "selector": "0x9002833f"
+ },
+ {
+  "type": "function",
+  "selector": "0x98e22861",
+  "sig": "distributeRefund(uint256,uint256)",
+  "name": "distributeRefund",
+  "stateMutability": "nonpayable",
+  "inputs": [
+   {
+    "type": "uint256"
+   },
+   {
+    "type": "uint256"
+   }
+  ]
+ },
+ {
+  "type": "function",
+  "selector": "0x6382d9ad",
+  "sig": "emergencyWithdraw(address,address)",
+  "name": "emergencyWithdraw",
+  "stateMutability": "nonpayable",
+  "inputs": [
+   {
+    "type": "address"
+   },
+   {
+    "type": "address"
+   }
+  ]
+ },
+ {
+  "type": "function",
+  "selector": "0x663082ce",
+  "sig": "emergencyWithdrawContribution()",
+  "name": "emergencyWithdrawContribution",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "type": "function",
+  "selector": "0x682bae40"
+ },
+ {
+  "type": "function",
+  "selector": "0x715018a6",
+  "sig": "renounceOwnership()",
+  "name": "renounceOwnership",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "type": "function",
+  "selector": "0x79a3892c",
+  "sig": "updateKycDetails(string)",
+  "name": "updateKycDetails",
+  "stateMutability": "nonpayable",
+  "inputs": [
+   {
+    "type": "string"
+   }
+  ]
+ },
+ {
+  "type": "function",
+  "selector": "0x7f388a81"
+ },
+ {
+  "type": "function",
+  "selector": "0x4bb278f3",
+  "sig": "finalize()",
+  "name": "finalize",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "type": "function",
+  "selector": "0x4e71d92d",
+  "sig": "claim()",
+  "name": "claim",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "type": "function",
+  "selector": "0x54fd4d50",
+  "sig": "version()",
+  "name": "version",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "type": "function",
+  "selector": "0x557ed1ba",
+  "sig": "getTime()",
+  "name": "getTime",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "type": "function",
+  "selector": "0x60b0b0f0",
+  "sig": "contribute(uint256,address)",
+  "name": "contribute",
+  "stateMutability": "nonpayable",
+  "inputs": [
+   {
+    "type": "uint256"
+   },
+   {
+    "type": "address"
+   }
+  ]
+ },
+ {
+  "type": "function",
+  "selector": "0x2a30ab1d",
+  "sig": "updatePoolDetails(string)",
+  "name": "updatePoolDetails",
+  "stateMutability": "nonpayable",
+  "inputs": [
+   {
+    "type": "string"
+   }
+  ]
+ },
+ {
+  "type": "function",
+  "selector": "0x2b38400e",
+  "sig": "getFeeSettings()",
+  "name": "getFeeSettings",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "type": "function",
+  "selector": "0x33dbd5d8",
+  "sig": "getUndistributedIndexes(uint8)",
+  "name": "getUndistributedIndexes",
+  "stateMutability": "nonpayable",
+  "inputs": [
+   {
+    "type": "uint8"
+   }
+  ]
+ },
+ {
+  "type": "function",
+  "selector": "0x3c81a345",
+  "sig": "getDependencies()",
+  "name": "getDependencies",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "type": "function",
+  "selector": "0x484f80fd"
+ },
+ {
+  "type": "function",
+  "selector": "0x0c48f240",
+  "sig": "purchasedVolumeOf(address)",
+  "name": "purchasedVolumeOf",
+  "stateMutability": "nonpayable",
+  "inputs": [
+   {
+    "type": "address"
+   }
+  ]
+ },
+ {
+  "type": "function",
+  "selector": "0x0d616d20",
+  "sig": "withdrawContribution()",
+  "name": "withdrawContribution",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "type": "function",
+  "selector": "0x173e7394"
+ },
+ {
+  "type": "function",
+  "selector": "0x2249742a",
+  "sig": "refundedOf(address)",
+  "name": "refundedOf",
+  "stateMutability": "nonpayable",
+  "inputs": [
+   {
+    "type": "address"
+   }
+  ]
+ },
+ {
+  "type": "function",
+  "selector": "0x253da8bd",
+  "sig": "getContributorCount()",
+  "name": "getContributorCount",
+  "stateMutability": "nonpayable",
+  "inputs": []
+ },
+ {
+  "name": "PoolUpdated",
+  "type": "event",
+  "inputs": [
+   {
+    "type": "uint256"
+   }
+  ]
+ },
+ {
+  "name": "Finalized",
+  "type": "event",
+  "inputs": [
+   {
+    "type": "address"
+   },
+   {
+    "type": "uint256"
+   },
+   {
+    "type": "uint256"
+   }
+  ]
+ },
+ {
+  "name": "EmergencyWithdrawContribution",
+  "type": "event",
+  "inputs": [
+   {
+    "type": "address"
+   },
+   {
+    "type": "address"
+   },
+   {
+    "type": "uint256"
+   },
+   {
+    "type": "uint256"
+   }
+  ]
+ },
+ {
+  "name": "TimeUpdated",
+  "type": "event",
+  "inputs": [
+   {
+    "type": "uint256"
+   },
+   {
+    "type": "uint256"
+   }
+  ]
+ },
+ {
+  "name": "Initialized",
+  "type": "event",
+  "inputs": [
+   {
+    "type": "uint8"
+   }
+  ]
+ },
+ {
+  "name": "Cancelled",
+  "type": "event",
+  "inputs": [
+   {
+    "type": "uint256"
+   }
+  ]
+ },
+ {
+  "name": "Contributed",
+  "type": "event",
+  "inputs": [
+   {
+    "type": "address",
+    "indexed": true
+   },
+   {
+    "type": "address"
+   },
+   {
+    "type": "uint256"
+   },
+   {
+    "type": "uint256"
+   },
+   {
+    "type": "uint256"
+   }
+  ]
+ },
+ {
+  "name": "WithdrawnContribution",
+  "type": "event",
+  "inputs": [
+   {
+    "type": "address"
+   },
+   {
+    "type": "address"
+   },
+   {
+    "type": "uint256"
+   }
+  ]
+ },
+ {
+  "name": "OwnershipTransferred",
+  "type": "event",
+  "inputs": [
+   {
+    "type": "address"
+   },
+   {
+    "type": "address"
+   }
+  ]
+ }
+]

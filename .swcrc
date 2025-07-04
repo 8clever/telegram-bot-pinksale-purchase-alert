@@ -1,0 +1,17 @@
+{
+  "$schema": "https://swc.rs/schema.json",
+  "module": {
+    "type": "commonjs",
+ 
+    // These are defaults.
+    "strict": false,
+    "strictMode": true,
+    "lazy": false,
+    "noInterop": false    
+  },
+  "jsc": {
+    "parser": {
+      "syntax": "typescript"
+    }
+  }
+}
