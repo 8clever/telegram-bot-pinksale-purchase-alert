@@ -2,7 +2,7 @@
 dist
 .env
 
-# yarn zero-installs
+# yarn
 .pnp.*
 .yarn/*
 !.yarn/patches
