@@ -44,9 +44,6 @@ jobs:
       - name: Corepack
         run: corepack enable
 
-      - name: Install Dependencies
-        run: yarn
-
       - name: Build
         run: yarn build
 
