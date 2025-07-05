@@ -11,7 +11,7 @@ Send purchase alerts to telegram channel
 - `static/templates/purchase.md`
 - `static/videos/purchase.mp4`
 
-**Provided variabled to purchase.md:**
+**Provided variables to purchase.md:**
 - `{amount_2}`
 - `{amount_6}`
 - `{wallet}`
