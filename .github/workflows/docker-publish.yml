@@ -41,11 +41,11 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: Corepack
-        run: corepack enable
+      - run: corepack enable
+      
+      - run: yarn
 
-      - name: Build
-        run: yarn build
+      - run: yarn build
 
       # Set up BuildKit Docker container builder to be able to build
       # multi-platform images and export cache
