@@ -3,7 +3,7 @@ run corepack enable
 workdir /app
 copy package.json package.json
 copy yarn.lock yarn.lock
-run yarn
+run yarn workspaces focus --production
 copy static static
 copy dist/src .
 cmd yarn node main

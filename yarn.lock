@@ -2553,7 +2553,7 @@ __metadata:
     "@types/node-telegram-bot-api": "npm:^0.64.9"
     dotenv: "npm:^17.0.1"
     node-telegram-bot-api: "npm:^0.66.0"
-    viem: "npm:^2.31.6"
+    viem: "npm:^2.31.7"
   languageName: unknown
   linkType: soft
 
@@ -3158,9 +3158,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"viem@npm:^2.31.6":
-  version: 2.31.6
-  resolution: "viem@npm:2.31.6"
+"viem@npm:^2.31.7":
+  version: 2.31.7
+  resolution: "viem@npm:2.31.7"
   dependencies:
     "@noble/curves": "npm:1.9.2"
     "@noble/hashes": "npm:1.8.0"
@@ -3175,7 +3175,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10c0/0b01fa25cac1c857f846e57178cfc77d45df5b0c44125686d685fc6cbe45055f5c73143d475a4d7e1bf9d214529f5051778366e2103fe8473466f805ae69a359
+  checksum: 10c0/b75d83e2af264bb4274dad6f6382db035d3231d1e1ae1d8ff9874d0368754f632124f486a76e6bf0a22236608f53292a55c3a57675e742b7c2f89e54fee60c8c
   languageName: node
   linkType: hard
 

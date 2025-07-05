@@ -12,6 +12,6 @@
   "dependencies": {
     "dotenv": "^17.0.1",
     "node-telegram-bot-api": "^0.66.0",
-    "viem": "^2.31.6"
+    "viem": "^2.31.7"
   }
 }
