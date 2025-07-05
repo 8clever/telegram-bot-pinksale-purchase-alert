@@ -7,7 +7,7 @@ Send purchase alerts to telegram channel
 **Supported Pinksale Pools:**
 - Fair Launch
 
-**For customization purchase message modify:**
+**Put custom message/video to paths:**
 - `static/templates/purchase.md`
 - `static/videos/purchase.mp4`
 
