@@ -18,4 +18,5 @@ Provided variabled to purchase.md:
 - `{wallet_short}`
 
 ## Support
-If you have any questions or you not have enough experience to deploy bot write me directly in [Telegram](https://t.me/ivanvityaev)
+If you have any questions or you not have enough experience to deploy bot 
+Feel free to write me directly in [Telegram](https://t.me/ivanvityaev)
