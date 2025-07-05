@@ -24,7 +24,6 @@ subscribe.add({
   },
   async onLogs (logs) {
     for (const log of logs) {
-      log.args
       const { user, amount } = log.args
       if (!(user && amount)) continue
       await bot.purchase({
