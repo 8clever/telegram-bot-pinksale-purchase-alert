@@ -1,8 +1,6 @@
 from node:iron-alpine3.22
 run corepack enable
 workdir /app
-copy .yarn/cache .yarn/cache
-copy .yarnrc.yml .yarnrc.yml
 copy yarn.lock yarn.lock
 copy package.json package.json
 run yarn workspaces focus --production
