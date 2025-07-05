@@ -3,13 +3,13 @@
     "build": "yarn swc --delete-dir-on-start ./src -d dist"
   },
   "devDependencies": {
+    "@shazow/whatsabi": "^0.22.2",
     "@swc/cli": "^0.7.7",
     "@swc/core": "^1.12.9",
     "@types/node-telegram-bot-api": "^0.64.9"
   },
   "packageManager": "yarn@4.9.2",
   "dependencies": {
-    "@shazow/whatsabi": "^0.22.2",
     "dotenv": "^17.0.1",
     "node-telegram-bot-api": "^0.66.0",
     "viem": "^2.31.6"
