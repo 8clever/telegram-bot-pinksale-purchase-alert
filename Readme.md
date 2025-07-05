@@ -1,5 +1,7 @@
 # Telegram Bot Pinksale Purchase Alert
 
+[Preview](https://github.com/8clever/telegram-bot-pinksale-purchase-alert/blob/main/image.png?raw=true)
+
 Supported Pinksale Pools:
 - Fair Launch
 
