@@ -1,5 +1,7 @@
 # Telegram Bot Pinksale Purchase Alert
+
 Send purchase alerts to telegram channel
+
 ![Preview](https://github.com/8clever/telegram-bot-pinksale-purchase-alert/blob/main/image.png?raw=true)
 
 **Supported Pinksale Pools:**
