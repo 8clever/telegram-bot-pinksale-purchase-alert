@@ -1,5 +1,12 @@
-node_modules
-.yarn
-.pnp.*
+# project
 dist
 .env
+
+# yarn zero-installs
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
