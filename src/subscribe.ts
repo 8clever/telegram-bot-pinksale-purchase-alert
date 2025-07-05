@@ -8,53 +8,82 @@ interface iSubscribe<abi extends Abi = Abi> {
   onLogs: (events: GetContractEventsReturnType<abi>) => void
 }
 
-let fromBlock: bigint
+export class Subscribe {
 
-function info (...args: any[]) {
-  const time = new Date().toLocaleString('ru')
-  console.info(time, ...args)
-}
+  private fromBlock = 0n
 
-async function fetchLogs<abi extends Abi = Abi> (client: PublicClient, ...args: iSubscribe<abi>[]) {
-  if (!fromBlock)
-    throw new Error('Invalid from block')
+  private toBlock   = 0n
 
-  const offset = 5n // blocks
-  const toBlock = await client.getBlockNumber() - offset;
+  private timer: NodeJS.Timeout;
 
-  for (const e of args) {
-    const { address, eventName, abi } = e.events
-    info('Fetch:', eventName)
-    const events = await client.getContractEvents({
-      fromBlock,
-      toBlock,
-      abi,
-      eventName,
-      address
-    })
-    info('Logs:', fromBlock, toBlock, events.length)
-    e.onLogs(events as any)
+  private events: iSubscribe[] = [];
+
+  constructor (
+    private client: PublicClient
+  ) {}
+
+  private info (...args: any[]) {
+    const time = new Date().toLocaleString('ru')
+    console.info(time, ...args)
   }
 
-  fromBlock = toBlock + 1n
-}
+  private async process () {
+    if (!this.fromBlock)
+      throw new Error('Invalid from blocks')
 
+    this.toBlock = await this.client.getBlockNumber() - 5n;
 
-export async function subscribe<abi extends Abi = Abi> (client: PublicClient, ...args: iSubscribe<abi>[]) {
-  for (const p of args) {
-    info('Subscribe:', p.events.eventName, p.events.address)
+    for (const e of this.events) {
+      const { address, eventName, abi } = e.events
+      const events = await this.client.getContractEvents({
+        fromBlock: this.fromBlock,
+        toBlock: this.toBlock,
+        abi,
+        eventName,
+        address
+      })
+      this.info('Logs:', eventName, this.fromBlock, this.toBlock, events.length)
+      e.onLogs(events as any)
+    }
+
+    this.fromBlock = this.toBlock + 1n;
   }
 
-  fromBlock = fromBlock || await client.getBlockNumber()
-  
-  const timer = setTimeout(async () => {
-    await fetchLogs(client, ...args)
-    destroy = await subscribe(client, ...args)
-  }, min_1)
-  
-  let destroy = () => {
-    clearTimeout(timer)
+  private subscribe () {
+    this.timer = setTimeout(async () => {
+      await this.process()
+      this.subscribe()
+    }, min_1)
   }
 
-  return destroy
+  add<abi extends Abi = Abi> (subscribtion: iSubscribe<abi>) {
+    /** @ts-ignore */
+    this.events.push(subscribtion)
+    this.info('Add:', subscribtion.events.eventName, subscribtion.events.address)
+  }
+
+  remove (subscribtion: iSubscribe) {
+    this.events = this.events.filter(e => e !== subscribtion)
+    this.info('Remove:', subscribtion.events.eventName, subscribtion.events.address)
+  }
+
+  async start () {
+    this.fromBlock = await this.client.getBlockNumber()
+    this.subscribe()
+    this.info("Subscriptions started:")
+    for (const e of this.events) {
+      this.info("-", e.events.eventName)
+    }
+  }
+
+  stop () {
+    clearTimeout(this.timer);
+    this.info("Subscriptions stopped")
+  }
+
+  destroy () {
+    this.stop()
+    this.events = []
+    this.info("Subscriptions destroyed")
+  }
 }

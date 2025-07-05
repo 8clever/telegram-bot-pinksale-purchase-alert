@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import { Address, createPublicClient, formatUnits, http, parseAbi } from 'viem'
 import { TelegramService } from './telegram'
-import { subscribe } from './subscribe'
+import { Subscribe } from './subscribe'
 
 const {
   POOL_ADDRESS,
@@ -14,9 +14,9 @@ const client = createPublicClient({
 
 const bot = new TelegramService()
 
-console.info(`Telegram Purchase Bot alert started!`)
+const subscribe = new Subscribe(client);
 
-subscribe(client, {
+subscribe.add({
   events: {
     address: POOL_ADDRESS as Address,
     abi: parseAbi(["event Contributed(address indexed user, address currency, uint256 amount, uint256 volume, uint256 totalVolume)"]),
@@ -34,3 +34,5 @@ subscribe(client, {
     }
   }
 })
+
+subscribe.start()
