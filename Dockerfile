@@ -1,7 +1,9 @@
 from node:iron-alpine3.22
+run corepack enable
 workdir /app
-copy node_modules node_modules
-copy static static
 copy package.json package.json
+copy yarn.lock yarn.lock
+run yarn
+copy static static
 copy dist/src .
-cmd node main
+cmd yarn node main

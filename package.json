@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "npx swc --delete-dir-on-start ./src -d dist"
+    "build": "yarn swc --delete-dir-on-start ./src -d dist"
   },
   "devDependencies": {
     "@swc/cli": "^0.7.7",

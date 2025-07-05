@@ -1,1 +1,6 @@
 .env
+src
+tests
+Dockerfile
+docker-compose.yml
+Readme.md
